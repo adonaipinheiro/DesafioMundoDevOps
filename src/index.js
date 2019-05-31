@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
 
-export default class Desafio extends Component {
-  render() {
-    return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
-    );
-  }
-}
+//Importing StatusBarConfig for all app
+import "./configs/statusBarConfig";
+
+//Components
+import Routes from "./routes/drawer";
+
+const App = () => <Routes />;
+
+export default App;
