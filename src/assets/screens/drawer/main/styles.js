@@ -10,11 +10,13 @@ const styles = StyleSheet.create({
   },
   body: {
     flex: 0.9,
+    marginTop: 10,
+    marginBottom: 10,
     margin: 30
   },
   bar: {
     width: "100%",
-    height: 1,
+    height: 0.5,
     borderRadius: 1,
     backgroundColor: "#FFF"
   },
@@ -28,8 +30,7 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   exercicesArea: {
-    width: "100%",
-    height: "100%",
+    flex: 1,
     marginTop: 10
   }
 });

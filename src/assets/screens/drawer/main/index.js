@@ -7,6 +7,7 @@ import styles from "./styles";
 //Components
 import Header from "../../../components/header";
 import FilterList from "../../../components/filter/list";
+import ExercicesList from "../../../components/exercices/list";
 
 export default class Main extends Component {
   render() {
@@ -20,7 +21,9 @@ export default class Main extends Component {
           <View style={styles.filterArea}>
             <FilterList />
           </View>
-          <View style={styles.exercicesArea} />
+          <View style={styles.exercicesArea}>
+            <ExercicesList />
+          </View>
         </View>
       </View>
     );

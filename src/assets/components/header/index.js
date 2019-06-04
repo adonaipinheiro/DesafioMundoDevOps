@@ -25,10 +25,10 @@ export class Header extends Component {
             this.props.navigation.openDrawer();
           }}
         >
-          <Icon name="align-left" size={iconSize} color="#FFF" />
+          <Icon name="bars" size={iconSize} color="#FFF" />
         </TouchableOpacity>
         <Text style={styles.mainText}>MEU PERFIL</Text>
-        <Icon name="sun" size={iconSize} color="#FFF" solid />
+        <Icon name="cog" size={iconSize} color="#FFF" solid />
       </View>
     );
   }
