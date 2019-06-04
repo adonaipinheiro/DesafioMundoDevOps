@@ -89,9 +89,9 @@ export default class Filter extends Component {
         borderColor: "#48596a"
       };
       s.whenYesterdayStyle = {
-        backgroundColor: "#FD3C29",
+        backgroundColor: "#19B996",
         borderWidth: 1,
-        borderColor: "#FD3C29"
+        borderColor: "#19B996"
       };
     }
 
