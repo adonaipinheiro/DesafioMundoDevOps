@@ -99,7 +99,7 @@ export default class Filter extends Component {
     if (p.time == 60) {
       s.time = `${(p.time / 60).toFixed(0)} h`;
     } else if (p.time > 60) {
-      s.time = `${(p.time / 60).toFixed(0)}h ${p.time -
+      s.time = `${Math.trunc(p.time / 60)}h ${p.time -
         60 * Math.trunc(p.time / 60)}m`;
     } else {
       s.time = p.time + " m";
