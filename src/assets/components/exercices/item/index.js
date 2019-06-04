@@ -22,7 +22,8 @@ export default class Filter extends Component {
       img: "",
       styleImg: {},
       whenTodayStyle: {},
-      whenYesterdayStyle: {}
+      whenYesterdayStyle: {},
+      time: ""
     };
   }
 
@@ -93,6 +94,15 @@ export default class Filter extends Component {
         borderColor: "#FD3C29"
       };
     }
+
+    //Time
+    if (p.time > 60) {
+      s.time = `${(p.time / 60).toFixed(0)}:${(p.time - 60).toFixed(0)} h`;
+    } else if (p.time == 60) {
+      s.time = `${(p.time / 60).toFixed(0)} h`;
+    } else {
+      s.time = p.time + " m";
+    }
   }
 
   render() {
@@ -123,9 +133,7 @@ export default class Filter extends Component {
               <View style={styles.separator} />
               <View style={styles.attributesContent}>
                 <Image style={{ width: 9, height: 12 }} source={ic_time} />
-                <Text style={styles.attributesText}>
-                  {this.props.data.time} m
-                </Text>
+                <Text style={styles.attributesText}>{this.state.time}</Text>
               </View>
               <View style={styles.separator} />
               <View style={styles.attributesContent}>
