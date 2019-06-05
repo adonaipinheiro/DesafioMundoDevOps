@@ -30,3 +30,9 @@ Rodar react-run na pasta clone
 ```cmd
 react-native run-android
 ```
+
+## Resultado
+
+| Esperado | Resultado |
+| -------- | --------- |
+| <img src="https://user-images.githubusercontent.com/20756362/58972504-12b0d880-8794-11e9-8c4e-5d0be1d87d29.png" height="307.2" width="160"> | <img src="https://user-images.githubusercontent.com/20756362/58972503-12184200-8794-11e9-8b33-74ac8bdeedc8.jpg" height="307.2" width="170"> |
